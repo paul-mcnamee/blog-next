@@ -33,7 +33,7 @@ export default function div() {
     // </footer>
 
     <footer className='sticky bottom-0 left-0 right-0 z-50 bg-dark text-gray-600'>
-      <div className='flex flex-row justify-center gap-1 py-2'>
+      <div className='flex flex-row justify-center gap-1 py-1'>
         <div>© {new Date().getFullYear()} By </div>
         <UnderlineLink href='https://paulmcnamee.com'>
           Paul McNamee
