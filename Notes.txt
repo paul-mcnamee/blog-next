@@ -3,11 +3,4 @@ initial template used:
     https://theodorusclarence.com/blog/one-stop-starter
 
 next steps:
-    check out this: https://github.com/theodorusclarence/expansion-pack
-    commit to github - https://github.com/paul-mcnamee/blog-next
-        git remote add origin https://github.com/paul-mcnamee/blog-next.git
-        git branch -M main
-        git push -u origin main
-    add markdown support with mdx
     add the old pages from the previous website
-    make sure slug links work, check the tutorial
