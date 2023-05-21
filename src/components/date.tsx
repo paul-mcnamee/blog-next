@@ -6,10 +6,12 @@ interface DateProps {
 }
 
 export default function Date({ dateString }: DateProps) {
-  const date = dateFns.parseISO(dateString.toString());
-  return (
-    <time dateTime={dateString.toString()}>
-      {dateFns.format(date, 'LLLL d, yyyy')}
-    </time>
-  );
+  if (dateString) {
+    const date = dateFns.parseISO(dateString.toString());
+    return (
+      <time dateTime={dateString.toString()}>
+        {dateFns.format(date, 'LLLL d, yyyy')}
+      </time>
+    );
+  }
 }
