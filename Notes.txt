@@ -3,4 +3,5 @@ initial template used:
     https://theodorusclarence.com/blog/one-stop-starter
 
 next steps:
-    add the old pages from the previous website
+    add the home page from the previous website
+    add a projects page
