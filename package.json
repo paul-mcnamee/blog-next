@@ -1,6 +1,8 @@
 {
-  "name": "ts-nextjs-tailwind-starter",
-  "version": "0.1.0",
+  "name": "pmac-blog-next",
+  "version": "0.0.1",
+  "description": "Paul McNamee's Blog",
+  "author": "Paul McNamee",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,10 +21,14 @@
   },
   "dependencies": {
     "clsx": "^1.2.1",
+    "date-fns": "^2.29.3",
+    "gray-matter": "^4.0.3",
     "next": "^13.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.2",
     "tailwind-merge": "^1.10.0"
   },
   "devDependencies": {

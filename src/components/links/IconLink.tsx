@@ -28,7 +28,7 @@ const IconLink = React.forwardRef<HTMLAnchorElement, IconLinkProps>(
       className,
       icon: Icon,
       variant = 'outline',
-      isDarkBg = false,
+      isDarkBg = true,
       iconClassName,
       ...rest
     },

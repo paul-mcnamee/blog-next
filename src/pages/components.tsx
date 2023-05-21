@@ -26,8 +26,8 @@ import Skeleton from '@/components/Skeleton';
 type Color = (typeof colorList)[number];
 
 export default function ComponentsPage() {
-  const [mode, setMode] = React.useState<'dark' | 'light'>('light');
-  const [color, setColor] = React.useState<Color>('sky');
+  const [mode, setMode] = React.useState<'dark' | 'light'>('dark');
+  const [color, setColor] = React.useState<Color>('emerald');
   function toggleMode() {
     return mode === 'dark' ? setMode('light') : setMode('dark');
   }
@@ -93,7 +93,7 @@ export default function ComponentsPage() {
                       </option>
                     ))}
                   </select>
-                  <ButtonLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter/blob/main/src/styles/colors.css'>
+                  <ButtonLink href='https://github.com/paulmcnamee/ts-nextjs-tailwind-starter/blob/main/src/styles/colors.css'>
                     Check list of colors
                   </ButtonLink>
                 </div>
@@ -138,7 +138,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <UnstyledLink href='/'>Internal Links</UnstyledLink>
-                  <UnstyledLink href='https://theodorusclarence.com'>
+                  <UnstyledLink href='https://paulmcnamee.com'>
                     Outside Links
                   </UnstyledLink>
                 </div>
@@ -151,7 +151,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <PrimaryLink href='/'>Internal Links</PrimaryLink>
-                  <PrimaryLink href='https://theodorusclarence.com'>
+                  <PrimaryLink href='https://paulmcnamee.com'>
                     Outside Links
                   </PrimaryLink>
                 </div>
@@ -164,7 +164,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <UnderlineLink href='/'>Internal Links</UnderlineLink>
-                  <UnderlineLink href='https://theodorusclarence.com'>
+                  <UnderlineLink href='https://paulmcnamee.com'>
                     Outside Links
                   </UnderlineLink>
                 </div>
@@ -203,36 +203,27 @@ export default function ComponentsPage() {
                   Button styled link with 3 variants.
                 </p>
                 <div className='flex flex-wrap gap-2'>
-                  <ButtonLink
-                    variant='primary'
-                    href='https://theodorusclarence.com'
-                  >
+                  <ButtonLink variant='primary' href='https://paulmcnamee.com'>
                     Primary Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='outline'
                     isDarkBg={mode === 'dark'}
-                    href='https://theodorusclarence.com'
+                    href='https://paulmcnamee.com'
                   >
                     Outline Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='ghost'
                     isDarkBg={mode === 'dark'}
-                    href='https://theodorusclarence.com'
+                    href='https://paulmcnamee.com'
                   >
                     Ghost Variant
                   </ButtonLink>
-                  <ButtonLink
-                    variant='dark'
-                    href='https://theodorusclarence.com'
-                  >
+                  <ButtonLink variant='dark' href='https://paulmcnamee.com'>
                     Dark Variant
                   </ButtonLink>
-                  <ButtonLink
-                    variant='light'
-                    href='https://theodorusclarence.com'
-                  >
+                  <ButtonLink variant='light' href='https://paulmcnamee.com'>
                     Light Variant
                   </ButtonLink>
                 </div>
