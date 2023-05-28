@@ -17,10 +17,11 @@ const About = () => {
           />
           <div className='max-w-lg'>
             <p className='mt-2 indent-4'>
-              I am currently based out of Denver Colorado, and I create websites
-              for small businesses and entrepreneurs to establish an online
-              presence and flourish in the digital age. Recently I have been
-              delving into the game development spaces as well.
+              I create websites for small businesses and entrepreneurs to
+              establish an online presence and flourish in the digital age. I
+              automate the superfluous stuff, and streamline processes to pass
+              on the cost savings to you. Recently I have been delving into the
+              game development space as well.
             </p>
             <p className='mt-2 indent-4'>
               I have had a huge passion for computers, programming, gaming,
@@ -28,12 +29,11 @@ const About = () => {
               work since I was pretty young.
             </p>
             <p className='mt-2 indent-4'>
-              I automate the superfluous stuff, and streamline processes to pass
-              on the cost savings to you. I love programming, but my interests
-              definitely extend way beyond computers. Fun fact, I was heavily
-              considering doing ceramics full time as a career path. In my free
-              time I like to hike, fish, snowboard, make beer (and drink it),
-              and of course program.
+              I love programming, but my interests definitely extend way beyond
+              computers. Fun fact, I was heavily considering doing ceramics full
+              time as a career path. In my free time around Denver Colorado, I
+              like to hike, fish, snowboard, make beer (and drink it), and of
+              course program.
             </p>
             <p className='text-md mt-3 indent-4 font-semibold'>
               Send me an email via Paul@FourthMouse.com, check out my projects,

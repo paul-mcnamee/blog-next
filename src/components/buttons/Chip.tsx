@@ -36,8 +36,8 @@ export type ChipProps = {
 // Define the Chip component as a function that takes ChipProps as props
 const Chip: FC<ChipProps> = ({
   text,
-  bgColor = 'bg-primary-400',
-  textColor = 'text-gray-800',
+  bgColor = 'bg-slate-900',
+  textColor = 'text-primary-600',
 }) => {
   // Return a JSX element that renders a span with tailwind css classes
   return (
@@ -45,7 +45,7 @@ const Chip: FC<ChipProps> = ({
       // style={{ backgroundColor: `${bgColor}` }}
       // Use the color prop to set the background color of the span
       className={clsxm(
-        `${textColor} ${bgColor} m-1 rounded-lg p-1 text-sm font-medium`
+        `${textColor} ${bgColor} m-1 rounded-lg px-2 py-1 text-sm font-medium`
       )}
     >
       {text}
