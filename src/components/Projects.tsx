@@ -48,11 +48,11 @@ const Projects = () => {
   return (
     <section id='projects' className='py-8'>
       <div className='container mx-auto'>
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='grid grid-cols-1 gap-4 p-2 md:grid-cols-2 lg:grid-cols-4'>
           {projects.map((project) => (
             <div
               key={project.id}
-              className='overflow-hidden rounded-lg shadow-lg'
+              className='overflow-hidden rounded-lg border border-primary-800 shadow-md hover:border-dashed'
             >
               <div className='flex justify-center'>
                 <NextImage
