@@ -20,12 +20,12 @@ const Projects = () => {
         { text: 'Next.js' },
         { text: 'GraphQL' },
         { text: 'Firebase' },
-        { text: 'React' },
-        { text: 'TypeScript' },
-        { text: 'Tailwind CSS' },
-        { text: 'Next.js' },
-        { text: 'GraphQL' },
-        { text: 'Firebase' },
+        { text: 'React 2' },
+        { text: 'TypeScript 2' },
+        { text: 'Tailwind CSS 2' },
+        { text: 'Next.js 2' },
+        { text: 'GraphQL 2' },
+        { text: 'Firebase 2' },
       ],
     },
     {
@@ -60,17 +60,17 @@ const Projects = () => {
               key={project.id}
               className='flex overflow-hidden rounded-lg border border-primary-900 shadow-md hover:border-dashed'
             >
-              <div className='flex flex-1 grow flex-col content-between justify-between'>
+              <div className='flex flex-1 flex-col justify-between'>
                 <div className='flex justify-center'>
                   <NextImage
                     src={project.image}
                     alt={project.title}
-                    className='m-4 w-24 object-cover md:w-32 '
+                    className='m-4 w-24 md:w-32 '
                     width={900}
                     height={900}
                   />
                 </div>
-                <div className='flex grow flex-col justify-end p-4'>
+                <div className='flex flex-col p-4'>
                   <h3 className='mb-2 text-xl font-semibold'>
                     {project.title}
                   </h3>
@@ -81,7 +81,7 @@ const Projects = () => {
                   </div>
                   <p className='mb-2 indent-3'>{project.description}</p>
                   <ButtonLink
-                    className='mt-3 justify-self-end'
+                    className='mt-3'
                     href={project.link}
                     variant='outline'
                   >

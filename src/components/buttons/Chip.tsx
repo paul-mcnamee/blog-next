@@ -45,7 +45,7 @@ const Chip: FC<ChipProps> = ({
       // style={{ backgroundColor: `${bgColor}` }}
       // Use the color prop to set the background color of the span
       className={clsxm(
-        `${textColor} ${bgColor} m-1 rounded-lg px-2 py-1 text-sm font-medium`
+        `${textColor} ${bgColor} mb-1 mr-1 rounded-lg px-2 py-1 text-sm font-medium`
       )}
     >
       {text}
