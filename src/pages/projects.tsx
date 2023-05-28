@@ -1,19 +1,18 @@
 import React from 'react';
 
-import About from '@/components/About';
-// import * as React from 'react';
 import Layout from '@/components/layout/Layout';
+import Projects from '@/components/Projects';
 import Seo from '@/components/Seo';
 
-export default function HomePage() {
+export default function ProjectsPage() {
   return (
     <Layout>
       <Seo templateTitle='Home' />
       <main>
         <header>
-          <h1 className='mt-4 text-center'>Paul McNamee</h1>
+          <h1 className='mt-4 text-center'>Projects</h1>
         </header>
-        <About />
+        <Projects />
       </main>
     </Layout>
   );

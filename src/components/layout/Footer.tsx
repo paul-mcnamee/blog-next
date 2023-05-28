@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import SocialButtons from '@/components/buttons/SocialButtons';
 import UnderlineLink from '@/components/links/UnderlineLink';
 
 export default function div() {
@@ -33,11 +34,14 @@ export default function div() {
     // </footer>
 
     <footer className='sticky bottom-0 left-0 right-0 z-50 bg-dark text-gray-600'>
-      <div className='flex flex-row justify-center gap-1 py-1'>
-        <div>© {new Date().getFullYear()} By </div>
-        <UnderlineLink href='https://paulmcnamee.com'>
-          Paul McNamee
-        </UnderlineLink>
+      <div className='flex flex-col justify-center gap-1 py-1'>
+        <SocialButtons />
+        <div className='flex justify-center'>
+          © {new Date().getFullYear()} By
+          <UnderlineLink className='mx-1' href='https://paulmcnamee.com'>
+            Paul McNamee
+          </UnderlineLink>
+        </div>
       </div>
     </footer>
   );

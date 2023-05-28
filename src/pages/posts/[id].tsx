@@ -1,9 +1,9 @@
 import * as React from 'react';
 
+import Date from '@/components/date';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
-import Date from '../../components/date';
 import type { Post } from '../../lib/posts';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
