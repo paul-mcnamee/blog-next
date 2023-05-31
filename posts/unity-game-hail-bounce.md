@@ -1,14 +1,7 @@
----
-title: 'Building a Game With Unity'
-date: '2020-01-02'
----
-
 # Building a Game With Unity
 
 Download the game on android:
-<a href='https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce'>
-<img src='/posts/images/PlayStore.png' alt="Play Store Download" width="300"/>
-</a>
+[![Image](/images/posts/PlayStore.png)](https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce)
 
 - [Building a Game With Unity](#building-a-game-with-unity)
   - [Intro](#intro)
@@ -55,7 +48,7 @@ GPU: gtx 1060 6GB
 
 ## Downloading and installing unity
 
-Download the unity hub [here](https://unity3d.com/get-unity/download). Once the download and install is complete, there is a section for installs. Be sure to select the appropriate version. The first one in the list is not the one you want, make sure you select a version with the letter f for final in it. The a version is alpha, and the b version is beta which are somewhat unstable. The most recent final release at the time of writing is <kbd>Unity 2019.1.8.f1</kbd>.
+Download the unity hub [here](https://unity3d.com/get-unity/download). Once the download and install is complete, there is a section for installs. Be sure to select the appropriate version. The first one in the list is not the one you want, make sure you select a version with the letter f for final in it. The a version is alpha, and the b version is beta which are somewhat unstable. The most recent final release at the time of writing is `Unity 2019.1.8.f1`.
 
 Make sure you select Android Build Support and the nested Android SDK and NDK Tools which we will go into later. Feel free to select any other platforms you might be interested in building your game for, I won't go into those in this post since I haven't gotten there yet.
 
@@ -81,8 +74,7 @@ I wanted to make it different than just flying through some zone to score, so I 
 
 Clouds needed some collision, I created a new object and added this simple script on a new cloud object.
 
-```C#
-
+```csharp
 void OnCollisionEnter2D(Collision2D other)
 {
     this.gameObject.SetActive(false);
@@ -91,8 +83,7 @@ void OnCollisionEnter2D(Collision2D other)
 
 I removed the bird flapping animations it looked a bit plain so I also made the object rotate on impact.
 
-```c#
-
+```csharp
 void OnCollisionEnter2D(Collision2D other)
 {
     if (other.collider.GetComponent<Cloud>() != null)
@@ -108,8 +99,7 @@ void OnCollisionEnter2D(Collision2D other)
 
 I thought it would be a bit more difficult if the game sped up over time. The scroll speed is the speed of the background and the clouds which is moving to the left (negative). I changed that by subtracting a set amount when the user scored:
 
-```c#
-
+```csharp
 public void HailScored()
 {
     ...
@@ -124,8 +114,7 @@ I used the same spawning pool pattern that was used for the pipes in the tutoria
 
 This was the code from the tutorial for spawning the pipes:
 
-```c#
-
+```csharp
 using UnityEngine;
 using System.Collections;
 
@@ -190,8 +179,7 @@ public class ColumnPool : MonoBehaviour
 
 This is the code that I ended up with after my modifications for the cloud pool:
 
-```c#
-
+```csharp
 using UnityEngine;
 using System.Collections;
 
@@ -269,29 +257,29 @@ I found [this one](https://assetstore.unity.com/packages/2d/gui/icons/105-colorf
 ## Debugging Android
 
 1. Connect your phone to your computer and make sure the phone is set to debug mode. See instructions [here](https://developer.android.com/studio/debug/dev-options) if you are not sure how to do that.
-2. Locate the SDK (this is installed by unity by default). <kbd>Edit -> Preferences -> External Tools -> Android</kbd> In the android section, if the checkmark for "Android SDK Tools Installed with Unity (recommended)" is selected, then your SDK will be located somewhere similar to time:<kbd>C:/Program Files/Unity/Hub/Editor/2019.3.0a6/Editor/Data/PlaybackEngines/AndroidPlayer/SDK</kbd>
-3. Navigate to the SDK and locate the "monitor.bat" file and run it, this will open the android device monitor which we can use to see the logs from the application we are creating.
+1. Locate the SDK (this is installed by unity by default). `Edit -> Preferences -> External Tools -> Android` In the android section, if the checkmark for "Android SDK Tools Installed with Unity (recommended)" is selected, then your SDK will be located somewhere similar to time: `C:/Program Files/Unity/Hub/Editor/2019.3.0a6/Editor/Data/PlaybackEngines/AndroidPlayer/SDK`
+1. Navigate to the SDK and locate the "monitor.bat" file and run it, this will open the android device monitor which we can use to see the logs from the application we are creating.
 
 ## Building Android
 
 With unity the process here is pretty easy fortunately. Most of this is not required unless you actually want to publish your game on the android play store, which I will get into later. Here is what you need to do for setting up the android build:
 
-1. There are some things you will want to configure before publishing the app to the store which can be found in <kbd>file -> build settings</kbd>.
+1. There are some things you will want to configure before publishing the app to the store which can be found in `file -> build settings`.
 1. After selecting Android from the list of platforms, click switch platform if it is not already selected.
-1. Select <kbd>Plyer Settings</kbd> and go through all of the items on the right. At a minimum, fill in the Company Name, Product name, and the package name under <kbd>Other Settings</kbd>.
-1. After you are done with those settings, close the player settings and under the previous screen, <kbd>Build Settings</kbd>, to the right of <kbd>Run Settings</kbd>, select your device, if you do not see it immediately then click refresh.
+1. Select `Plyer Settings` and go through all of the items on the right. At a minimum, fill in the Company Name, Product name, and the package name under `Other Settings`.
+1. After you are done with those settings, close the player settings and under the previous screen, `Build Settings`, to the right of `Run Settings`, select your device, if you do not see it immediately then click refresh.
 1. Click build and run.
 
-The build will output a file with the <kbd>.aab</kbd> extension. This is useful later when we will publish it to the play store. If you want to extract the <kbd>.apk</kbd> manually you can do that.
+The build will output a file with the `.aab` extension. This is useful later when we will publish it to the play store. If you want to extract the `.apk` manually you can do that.
 
 ### Extracting the .apk (optional)
 
 This portion is not necessary, but you can have some friends try it out if they know how to manually install .apk files on their device, they will need to allow installs from outside sources on their device before attempting to install it though.
 
-1. Go to the location where you saved the <kbd>.aab</kbd> file from the previous build
+1. Go to the location where you saved the `.aab` file from the previous build
 1. You can run bundletool.jar which is used to manipulate app bundles. You can download it here.
-1. Run the tool in command line via java <kbd>java -jar bundletool.jar build-apks --bundle=<YOUR_AP_BUNDLE_NAME>.aab --output=<YOUR_AP_BUNDLE_NAME>.apks</kbd>
-1. This will create a <kbd>.apks</kbd> bundle which contains the apk you can install on other devices. Open the .apks archive with some archive explorer, I prefer [7zip](https://www.7-zip.org/download.html). You will find the apk in the standalones folder named <kbd>standalone-armeabi_v7a.apk</kbd>.
+1. Run the tool in command line via java `java -jar bundletool.jar build-apks --bundle=<YOUR_AP_BUNDLE_NAME>.aab --output=<YOUR_AP_BUNDLE_NAME>.apks`
+1. This will create a `.apks` bundle which contains the apk you can install on other devices. Open the .apks archive with some archive explorer, I prefer [7zip](https://www.7-zip.org/download.html). You will find the apk in the standalones folder named `standalone-armeabi_v7a.apk`.
 
 ## Serving Ads with AdMob
 
@@ -301,7 +289,7 @@ Make sure to add your device as a test device. Follow [this guide](https://devel
 
 Attach the Ads script to the Main Camera object in unity, this is the script I am using for ads:
 
-```c#
+```csharp
 
 using UnityEngine;
 using GoogleMobileAds.Api;

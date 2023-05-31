@@ -76,6 +76,24 @@
     @apply font-primary text-sm text-zinc-300 md:text-base;
   }
 
+  ol,
+  .ol {
+    margin: 0.5rem;
+    @apply font-primary text-sm text-zinc-300 md:text-base;
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: orderedListCounter;
+  }
+  ol li {
+    counter-increment: orderedListCounter;
+  }
+  ol li::before {
+    content: counter(orderedListCounter) '. ';
+    font-weight: bold;
+  }
+
   time {
     margin: 1rem;
     @apply font-primary text-base font-thin italic text-zinc-300 md:text-base;

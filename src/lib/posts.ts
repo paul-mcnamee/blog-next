@@ -1,16 +1,11 @@
 import fs from 'fs';
-import matter from 'gray-matter';
 import path from 'path';
-import { remark } from 'remark';
-import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
 export interface Post {
   id?: string;
-  date?: number;
-  title?: string;
-  contentHtml?: string;
+  content?: string;
 }
 
 export function getSortedPostsData(): Array<Post> {
@@ -24,23 +19,12 @@ export function getSortedPostsData(): Array<Post> {
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
+    const post: Post = { id: id, content: fileContents };
 
-    const post = matterResult.data as Post;
-    post.id = id;
-
-    return { ...post, ...matterResult.data };
+    return { ...post };
   });
 
-  // Sort posts by date
-  return allPostsData.sort((a: Post, b: Post) => {
-    if (a && b && a.date && b.date && a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  return allPostsData;
 }
 
 export function getAllPostIds() {
@@ -57,21 +41,20 @@ export function getAllPostIds() {
 
 export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const content = fs.readFileSync(fullPath, 'utf8');
 
   // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents);
+  // const matterResult = matter(fileContents);
 
   // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content);
-  const contentHtml = processedContent.toString();
+  // const processedContent = await remark()
+  //   .use(html)
+  //   .process(matterResult.content);
+  // const contentHtml = processedContent.toString();
 
   // Combine the data with the id and contentHtml
   return {
     id,
-    contentHtml,
-    ...matterResult.data,
+    content,
   };
 }
