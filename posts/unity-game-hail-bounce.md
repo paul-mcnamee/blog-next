@@ -6,8 +6,9 @@ Download the game on android:
 - [Building a Game With Unity](#building-a-game-with-unity)
   - [Intro](#intro)
   - [Required hardware](#required-hardware)
-    - [Phone](#phone)
-    - [Desktop](#desktop)
+    - [My hardware](#my-hardware)
+      - [Phone](#phone)
+      - [Desktop](#desktop)
   - [Downloading and installing unity](#downloading-and-installing-unity)
   - [Following a tutorial to get started with Unity](#following-a-tutorial-to-get-started-with-unity)
   - [Generating ideas for a game](#generating-ideas-for-a-game)
@@ -34,13 +35,13 @@ Hopefully this post will explain all of the steps to build a game with unity and
 
 A computer with maybe 2 cores and 4 gb of ram, seriously the requirements are pretty low for game development depending on what you're doing it really won't matter what your specs are as long as you are willing to wait a bit for compilations. For more details specs on what unity actually requires check them out [here](https://unity3d.com/unity/system-requirements).
 
-My hardware is as follows:
+### My hardware
 
-### Phone
+#### Phone
 
 OnePlus 6T running Android 9
 
-### Desktop
+#### Desktop
 
 CPU: i5-6400
 RAM: 16 GB

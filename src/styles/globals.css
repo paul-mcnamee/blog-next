@@ -47,45 +47,41 @@
 
   /* #region  /**=========== Typography =========== */
   .h0 {
-    @apply font-primary text-3xl font-bold text-primary-200 md:text-5xl;
+    @apply m-2 font-primary text-3xl font-bold text-primary-200 md:text-5xl;
   }
 
   h1,
   .h1 {
-    @apply font-primary text-2xl font-bold text-primary-300 md:text-4xl;
+    @apply m-2 font-primary text-2xl font-bold text-primary-300 md:text-4xl;
   }
 
   h2,
   .h2 {
-    @apply font-primary text-xl font-bold text-primary-400 md:text-3xl;
+    @apply m-2 font-primary text-xl font-bold text-primary-400 md:text-3xl;
   }
 
   h3,
   .h3 {
-    @apply font-primary text-lg font-bold text-primary-500 md:text-2xl;
+    @apply m-2 font-primary text-lg font-bold text-primary-500 md:text-2xl;
   }
 
   h4,
   .h4 {
-    @apply font-primary text-base font-bold text-primary-600 md:text-lg;
+    @apply m-2 font-primary text-base font-bold text-primary-600 md:text-lg;
   }
 
   ul,
   .ul {
-    margin: 0.5rem;
-    @apply font-primary text-sm text-zinc-300 md:text-base;
+    @apply m-1 font-primary text-sm text-zinc-300 md:text-base;
   }
 
   ol,
   .ol {
-    margin: 0.5rem;
-    @apply font-primary text-sm text-zinc-300 md:text-base;
-  }
-
-  ol {
+    @apply m-1 font-primary text-sm text-zinc-300 md:text-base;
     list-style: none;
     counter-reset: orderedListCounter;
   }
+
   ol li {
     counter-increment: orderedListCounter;
   }
@@ -95,8 +91,7 @@
   }
 
   time {
-    margin: 1rem;
-    @apply font-primary text-base font-thin italic text-zinc-300 md:text-base;
+    @apply m-1 font-primary text-base font-thin italic text-zinc-300 md:text-base;
   }
 
   li,
@@ -108,7 +103,7 @@
 
   p,
   .p {
-    @apply font-primary text-sm text-zinc-300 md:text-base;
+    @apply mb-2 indent-3 font-primary text-sm text-zinc-300 md:text-base;
   }
   /* #endregion  /**======== Typography =========== */
 
@@ -134,7 +129,7 @@
 
   hr,
   .hr {
-    margin-top: 0.5rem;
+    @apply mt-1;
   }
 }
 
