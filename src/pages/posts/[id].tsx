@@ -1,4 +1,5 @@
 import * as React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import Date from '@/components/date';
 import Layout from '@/components/layout/Layout';
@@ -42,7 +43,8 @@ export default function Post({ postData }: PostComponentProps) {
           <hr></hr>
           <br></br>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml ?? '' }} />
+        <ReactMarkdown>{postData.contentHtml ?? ''}</ReactMarkdown>
+        {/* <div dangerouslySetInnerHTML={{ __html: postData.contentHtml ?? '' }} /> */}
       </div>
     </Layout>
   );
