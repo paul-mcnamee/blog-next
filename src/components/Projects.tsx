@@ -12,7 +12,7 @@ const Projects = () => {
       description:
         'Life Calendar App allows you to keep track of your daily tasks, and organize your thoughts each day with a simple interface.',
       image: '/images/logos/lifecalendar.webp',
-      link: 'https://play.google.com/store/apps/details?id=com.FourthMouse.FlopHop',
+      link: 'https://play.google.com/store/apps/details?id=com.FourthMouse.life_calendar',
       chips: [{ text: 'Flutter' }, { text: 'Firebase' }, { text: 'Android' }],
       id: 'life-calendar',
     },
@@ -51,7 +51,6 @@ const Projects = () => {
       description:
         'Hail bounce is a side-scrolling mobile game featuring 2D retro style graphics. The objective is to fly through clouds and gain hail points. Fight gravity and the increasing storm winds to achieve the highest score to brag to your friends. Avoid falling out of the cloud cycle or falling to the ground.',
       image: '/images/logos/hailbounce.webp',
-      codeUrl: '/post/unity-game-hail-bounce',
       link: '/posts/unity-game-hail-bounce',
       chips: [
         { text: 'C#' },
@@ -60,6 +59,22 @@ const Projects = () => {
         { text: 'Game Development' },
       ],
       id: 'hail-bounce',
+    },
+    {
+      title: 'Will It Compost',
+      description:
+        'I made Will It Compost because I could not find a good searchable resource for which materials were compostable at home.',
+      image: '/images/logos/compostable.png',
+      link: '/posts/will-it-compost',
+      chips: [
+        { text: 'gardening' },
+        { text: 'vue' },
+        { text: 'nuxt' },
+        { text: 'vuetify' },
+        { text: 'netlify' },
+        { text: 'JavaScript' },
+      ],
+      id: 'personal-website',
     },
     {
       title: 'Personal Website (Vue)',
@@ -76,6 +91,21 @@ const Projects = () => {
         { text: 'JavaScript' },
       ],
       id: 'personal-website',
+    },
+    {
+      title: 'Twitch Clip Concatenator',
+      description:
+        'At the time there were a lot of youtube videos which were just combined clips from twitch in the form of a compilation video. I decided it would be fun to automate this.',
+      image: '/images/logos/twitch.svg',
+      link: '/posts/twitch-clip-concatenator',
+      chips: [
+        { text: 'api' },
+        { text: 'twitch' },
+        { text: 'youtube' },
+        { text: 'python' },
+        { text: 'batch' },
+      ],
+      id: 'twitch-clip-concatenator',
     },
     {
       title: 'LeDavin',

@@ -78,12 +78,6 @@ export default function Post({ postData }: PostComponentProps) {
     <Layout>
       <Seo templateTitle={postData.id} />
       <div className='layout relative flex flex-col py-2'>
-        {/* <h1>{postData.title}</h1> */}
-        <div>{/* <Date dateString={postData.date ?? 0} /> */}</div>
-        <div>
-          <hr></hr>
-          <br></br>
-        </div>
         <ReactMarkdown components={MarkdownComponents}>
           {markdown}
         </ReactMarkdown>

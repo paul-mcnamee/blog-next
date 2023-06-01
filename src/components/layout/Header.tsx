@@ -5,7 +5,7 @@ import PrimaryLink from '@/components/links/PrimaryLink';
 const links = [
   { href: '/skills', label: 'Skills' },
   { href: '/projects', label: 'Projects' },
-  { href: '/about', label: 'About' },
+  // { href: '/about', label: 'About' },
 ];
 
 export default function Header() {
