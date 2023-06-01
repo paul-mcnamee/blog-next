@@ -90,7 +90,7 @@ const Projects = () => {
       description:
         'This is the previous iteration of my website, it was designed from scratch using a bunch of new web technology (at the time) that I thought was interesting to me and will host some information that I would like to share with the rest of the world relating to myself and my active pursuits.',
       image: '/images/githubprofileportrait.jfif',
-      link: 'https://github.com/paul-mcnamee/blog',
+      link: '/posts/vue-nuxt-vuetify-blog',
       chips: [
         { text: 'vue' },
         { text: 'nuxt' },
