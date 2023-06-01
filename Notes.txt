@@ -3,5 +3,7 @@ initial template used:
     https://theodorusclarence.com/blog/one-stop-starter
 
 next steps:
-    add the home page from the previous website
-    add a projects page
+    add skills section
+    add missing projects
+    add additional blog posts for each project
+    verify links for the projects

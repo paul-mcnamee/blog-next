@@ -39,7 +39,6 @@
       "url": "http://localhost:3000",
       "sourceMaps": true,
       "webRoot": "${workspaceFolder}",
-      "diagnosticLogging": true,
       "sourceMapPathOverrides": {
         "webpack:///./*": "${webRoot}/*"
       }
