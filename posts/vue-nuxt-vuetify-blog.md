@@ -4,7 +4,7 @@ Vue is a popular front-end framework for building user interfaces and single-pag
 
 This post will demonstrate and outline how to create something similar to [my website](https://goofy-turing-c81cc1.netlify.app/) which you can view the code for on [github](https://github.com/paul-mcnamee/blog) since it is public like most of my projects.
 
-I started with this mockup for my personal website, it is a good idea to sketch out your ideas ahead of time so you can have a better understanding what your end goal will be even if it is just a rough sketch like this:
+I started with this mockup for my personal website, it is a good idea to sketch out your ideas ahead of time so you can have a better understanding what your end goal will be even if it is just a rough sketch like my original mockup:
 
 ![blog mockup](/images/posts/personal-site-mockup.jpg)
 

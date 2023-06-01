@@ -5,21 +5,20 @@ import ButtonLink from '@/components/links/ButtonLink';
 import NextImage from '@/components/NextImage';
 
 const Projects = () => {
-  // You can use an array of objects to store your project data
   const projects = [
     {
-      title: 'Life Calendar', // TODO: link the markdown page from the old website instead of using the link to the play store
+      title: 'Life Calendar',
       description:
         'Life Calendar App allows you to keep track of your daily tasks, and organize your thoughts each day with a simple interface.',
       image: '/images/logos/lifecalendar.webp',
-      link: 'https://play.google.com/store/apps/details?id=com.FourthMouse.life_calendar',
+      link: '/posts/life-calendar',
       chips: [{ text: 'Flutter' }, { text: 'Firebase' }, { text: 'Android' }],
       id: 'life-calendar',
     },
     {
       title: 'Flop Hop',
       description:
-        'This arcade game features a space bunny dodging asteroids and collecting stars. Fly by asteroids and capture as many stars as possible to help the space bunny astronaut return home in time for dinner!',
+        'I made this in a day as a challenge to see how much I could get done with unity in one day. This arcade game features a space bunny dodging asteroids and collecting stars. Fly by asteroids and capture as many stars as possible to help the space bunny astronaut return home in time for dinner!',
       image: '/images/logos/flophop.webp',
       link: 'https://play.google.com/store/apps/details?id=com.FourthMouse.FlopHop',
       chips: [
