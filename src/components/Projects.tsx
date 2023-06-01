@@ -17,7 +17,7 @@ const Projects = () => {
       id: 'life-calendar',
     },
     {
-      title: 'Flop Hop', // TODO: link the markdown page from the old website instead of using the link to the play store
+      title: 'Flop Hop',
       description:
         'This arcade game features a space bunny dodging asteroids and collecting stars. Fly by asteroids and capture as many stars as possible to help the space bunny astronaut return home in time for dinner!',
       image: '/images/logos/flophop.webp',
@@ -47,9 +47,9 @@ const Projects = () => {
       id: 'mischief',
     },
     {
-      title: 'Hail Bounce', // TODO: link the markdown page from the old website instead of using the link to the play store
+      title: 'Hail Bounce',
       description:
-        'Hail bounce is a side-scrolling mobile game featuring 2D retro style graphics. The objective is to fly through clouds and gain hail points. Fight gravity and the increasing storm winds to achieve the highest score to brag to your friends. Avoid falling out of the cloud cycle or falling to the ground.',
+        'Hail bounce is the first game I ever created with unity, it is a side-scrolling mobile game featuring 2D retro style graphics. The objective is to fly through clouds and gain hail points. Fight gravity and the increasing storm winds to achieve the highest score to brag to your friends. Avoid falling out of the cloud cycle or falling to the ground.',
       image: '/images/logos/hailbounce.webp',
       link: '/posts/unity-game-hail-bounce',
       chips: [
@@ -59,6 +59,15 @@ const Projects = () => {
         { text: 'Game Development' },
       ],
       id: 'hail-bounce',
+    },
+    {
+      title: 'Require Component Checker',
+      description:
+        'A unity editor script designed to find all of the components which are currently in the project and have missing components denoted by the RequireComponent attribute',
+      image: '/images/logos/unity.svg',
+      link: 'https://github.com/paul-mcnamee/RequireComponentChecker',
+      chips: [{ text: 'C#' }, { text: 'Unity' }, { text: 'Game Development' }],
+      id: 'require-component-checker',
     },
     {
       title: 'Will It Compost',
@@ -146,14 +155,14 @@ const Projects = () => {
               key={project.id}
               className='flex overflow-hidden rounded-lg border border-primary-900 shadow-md hover:border-dashed'
             >
-              <div className='flex flex-1 flex-col justify-between'>
+              <div className='flex flex-1 flex-col place-content-end'>
                 <div className='flex justify-center'>
                   <NextImage
                     src={project.image}
                     alt={project.title}
                     className='m-4 w-24 md:w-32 '
-                    width={900}
-                    height={900}
+                    width={600}
+                    height={600}
                   />
                 </div>
                 <div className='flex flex-col p-4'>
