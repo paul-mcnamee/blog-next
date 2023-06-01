@@ -105,6 +105,11 @@
   .p {
     @apply mb-2 indent-3 font-primary text-sm text-zinc-300 md:text-base;
   }
+
+  a,
+  .a {
+    @apply text-primary-400;
+  }
   /* #endregion  /**======== Typography =========== */
 
   .layout {
@@ -117,10 +122,10 @@
   .body {
     @apply bg-dark;
   }
-
+  /*
   .bg-dark a.custom-link {
     @apply border-gray-200 hover:border-gray-200;
-  }
+  } */
 
   /* Class to adjust with sticky footer */
   .min-h-main {
