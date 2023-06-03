@@ -1,6 +1,5 @@
+import Image from 'next/image';
 import React from 'react';
-
-import NextImage from '@/components/NextImage';
 
 interface Props {
   skill: string; // the name of the skill or language
@@ -19,9 +18,7 @@ const ProgressCircle: React.FC<Props> = ({ skill, percentage, image }) => {
       <span className='text-lg font-bold'>{skill}</span>
       <div className='relative h-32 w-32'>
         <div className='absolute h-32 w-32'>
-          <NextImage
-            className=''
-            imgClassName=''
+          <Image
             src={image}
             alt={skill}
             style={{

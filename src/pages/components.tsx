@@ -1,5 +1,6 @@
 // !STARTERCONF You can delete this page
 import clsx from 'clsx';
+import Image from 'next/image';
 import * as React from 'react';
 import {
   HiArrowRight,
@@ -19,9 +20,7 @@ import ButtonLink from '@/components/links/ButtonLink';
 import PrimaryLink from '@/components/links/PrimaryLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
-import NextImage from '@/components/NextImage';
 import Seo from '@/components/Seo';
-import Skeleton from '@/components/Skeleton';
 
 type Color = (typeof colorList)[number];
 
@@ -429,8 +428,7 @@ export default function ComponentsPage() {
                 <p className={clsx('!mt-1 text-sm', textColor)}>
                   Next Image with default props and skeleton animation
                 </p>
-                <NextImage
-                  useSkeleton
+                <Image
                   className='w-32 md:w-40'
                   src='/favicon/android-chrome-192x192.png'
                   width='180'
@@ -443,7 +441,6 @@ export default function ComponentsPage() {
                 <p className={clsx('!mt-1 text-sm', textColor)}>
                   Skeleton with shimmer effect
                 </p>
-                <Skeleton className='h-72 w-72' />
               </li>
             </ol>
           </div>

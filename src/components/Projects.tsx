@@ -1,8 +1,8 @@
+import Image from 'next/image';
 import React from 'react';
 
 import Chip from '@/components/buttons/Chip';
 import ButtonLink from '@/components/links/ButtonLink';
-import NextImage from '@/components/NextImage';
 
 const Projects = () => {
   const projects = [
@@ -156,7 +156,7 @@ const Projects = () => {
             >
               <div className='flex flex-1 flex-col place-content-end'>
                 <div className='flex justify-center'>
-                  <NextImage
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className='m-4 w-24 md:w-32 '

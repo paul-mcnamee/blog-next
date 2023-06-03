@@ -1,20 +1,25 @@
+import Image from 'next/image';
 import React from 'react';
 
 import ButtonLink from '@/components/links/ButtonLink';
-import NextImage from '@/components/NextImage';
 
 const About = () => {
   return (
     <section id='about' className='py-8'>
       <div className='container mx-auto'>
-        <div className='flex flex-col items-center justify-center space-x-8 md:flex-row'>
-          <NextImage
-            imgClassName='rounded-3xl object-cover'
-            src='/images/selfie.jpg'
-            width='640'
-            height='480'
-            alt='Profile'
-          />
+        <div className='flex flex-col items-center justify-center space-x-8 lg:flex-row'>
+          <div className='flex px-8 pb-5'>
+            <Image
+              className='rounded-3xl object-scale-down'
+              src='/images/selfie.jpg'
+              style={{
+                position: 'relative',
+              }}
+              width={640}
+              height={480}
+              alt='Profile'
+            />
+          </div>
           <div className='max-w-lg'>
             <p className='mt-2 indent-4'>
               I create websites for small businesses and entrepreneurs to
