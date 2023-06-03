@@ -434,8 +434,8 @@ export default function ComponentsPage() {
                   width='180'
                   height='180'
                   alt='Icon'
-                  placeholder='blur'
-                  blurDataURL='data:image/gif;base64,R0lGODlhAQABAPAAAKiinv///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                  // placeholder='blur'
+                  // blurDataURL='data:image/gif;base64,R0lGODlhAQABAPAAAKiinv///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
                 />
               </li>
               <li className='space-y-2'>

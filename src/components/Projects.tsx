@@ -179,8 +179,8 @@ const Projects = () => {
                     style={{
                       position: 'relative',
                     }}
-                    placeholder='blur'
-                    blurDataURL='data:image/gif;base64,R0lGODlhAQABAPAAAKiinv///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                    // placeholder='blur'
+                    // blurDataURL='data:image/gif;base64,R0lGODlhAQABAPAAAKiinv///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
                     className='m-4 w-24 object-scale-down md:w-32'
                     width={600}
                     height={600}
