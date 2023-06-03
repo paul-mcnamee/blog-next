@@ -8,7 +8,8 @@ const defaultMeta = {
   url: 'https://www.PaulMcNamee.com',
   type: 'website',
   robots: 'follow, index',
-  image: 'https://tsnext-tw.thcl.dev/images/large-og.png',
+  image:
+    'https://raw.githubusercontent.com/paul-mcnamee/blog-next/main/public/images/large-og-2.png',
 };
 
 type SeoProps = {
