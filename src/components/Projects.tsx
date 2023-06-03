@@ -171,19 +171,22 @@ const Projects = () => {
               key={project.id}
               className='flex overflow-hidden rounded-lg border border-primary-900 shadow-md hover:border-dashed'
             >
-              <div className='flex flex-1 flex-col place-content-end'>
-                <div className='flex justify-center'>
+              <div className='flex flex-1 flex-col'>
+                <div className='flex place-content-start justify-center md:h-40'>
                   <Image
                     src={project.image}
                     alt={project.title}
+                    style={{
+                      position: 'relative',
+                    }}
                     placeholder='blur'
                     blurDataURL='data:image/gif;base64,R0lGODlhAQABAPAAAKiinv///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
-                    className='m-4 w-24 md:w-32 '
+                    className='m-4 w-24 object-scale-down md:w-32'
                     width={600}
                     height={600}
                   />
                 </div>
-                <div className='flex flex-col p-4'>
+                <div className='flex flex-col place-content-end p-4'>
                   <h3 className='mb-2 text-xl font-semibold'>
                     {project.title}
                   </h3>
@@ -193,8 +196,11 @@ const Projects = () => {
                     ))}
                   </div>
                   <p className='mb-2 indent-3'>{project.description}</p>
+                </div>
+                <div className='flex flex-grow'></div>
+                <div className='mx-5 mb-5 flex'>
                   <ButtonLink
-                    className='mt-3'
+                    className='flex flex-grow'
                     href={project.link}
                     variant='outline'
                   >
