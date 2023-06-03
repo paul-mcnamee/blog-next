@@ -15,6 +15,8 @@ const About = () => {
               style={{
                 position: 'relative',
               }}
+              placeholder='blur'
+              blurDataURL='data:image/gif;base64,R0lGODlhAQABAPAAAKiinv///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
               width={640}
               height={480}
               alt='Profile'
