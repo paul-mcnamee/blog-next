@@ -29,8 +29,6 @@ const ProgressCircle: React.FC<Props> = ({ skill, percentage, image }) => {
               left: '50%',
               transform: 'translate(-50%, -50%)',
             }}
-            // placeholder='blur'
-            // blurDataURL='data:image/gif;base64,R0lGODlhAQABAPAAAKiinv///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
             width={600}
             height={600}
           />
