@@ -11,7 +11,7 @@ const Projects = () => {
       description:
         'You are looking at this one right now, it was designed from scratch using a bunch of new web technology that I thought was interesting to me and will host some information that I would like to share with the rest of the world relating to myself and my active pursuits.',
       image: '/images/githubprofileportrait.jfif',
-      link: '/',
+      link: 'https://github.com/paul-mcnamee/blog-next',
       chips: [
         { text: 'React' },
         { text: 'NextJS' },
