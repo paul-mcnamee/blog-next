@@ -50,9 +50,9 @@ const About = () => {
               <ButtonLink className='mt-6' href='/projects' variant='outline'>
                 View Projects
               </ButtonLink>
-              <ButtonLink className='mt-6' href='resume.pdf' variant='outline'>
+              {/* <ButtonLink className='mt-6' href='resume.pdf' variant='outline'>
                 Download Resume
-              </ButtonLink>
+              </ButtonLink> */}
             </div>
           </div>
         </div>
