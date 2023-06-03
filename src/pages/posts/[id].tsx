@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import bash from 'react-syntax-highlighter/dist/cjs/languages/prism/bash';
@@ -15,7 +15,6 @@ import Seo from '@/components/Seo';
 import type { Post } from '../../lib/posts';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function getStaticProps({ params }: any) {
   const postData = await getPostData(params.id);
   return {
@@ -37,14 +36,22 @@ interface PostComponentProps {
   postData: Post;
 }
 
+interface CodeComponent {
+  node: any;
+  inline: any;
+  className: any;
+  children: any;
+}
+
 export default function Post({ postData }: PostComponentProps) {
   const syntaxTheme = oneDark;
   const markdown = postData.content ?? '';
   const MarkdownComponents: object = {
     // eslint-disable-next-line unused-imports/no-unused-vars
-    code({ node, inline, className, ...props }) {
+    code({ node, inline, className, children, ...props }: CodeComponent) {
       const hasLang = /language-(\w+)/.exec(className || '');
       const hasMeta = node?.data?.meta;
+      props;
       return hasLang ? (
         <SyntaxHighlighter
           style={syntaxTheme}
@@ -54,9 +61,8 @@ export default function Post({ postData }: PostComponentProps) {
           showLineNumbers={true}
           wrapLines={hasMeta}
           useInlineStyles={true}
-          // lineProps={applyHighlights}
         >
-          {props.children}
+          {children}
         </SyntaxHighlighter>
       ) : (
         <code className={className} {...props} />
