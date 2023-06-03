@@ -7,6 +7,22 @@ import ButtonLink from '@/components/links/ButtonLink';
 const Projects = () => {
   const projects = [
     {
+      title: 'Personal Website',
+      description:
+        'You are looking at this one right now, it was designed from scratch using a bunch of new web technology that I thought was interesting to me and will host some information that I would like to share with the rest of the world relating to myself and my active pursuits.',
+      image: '/images/githubprofileportrait.jfif',
+      link: '/',
+      chips: [
+        { text: 'React' },
+        { text: 'NextJS' },
+        { text: 'Tailwind' },
+        { text: 'netlify' },
+        { text: 'markdown' },
+        { text: 'TypeScript' },
+      ],
+      id: 'personal-website',
+    },
+    {
       title: 'Life Calendar',
       description:
         'Life Calendar App allows you to keep track of your daily tasks, and organize your thoughts each day with a simple interface.',
@@ -44,7 +60,7 @@ const Projects = () => {
         { text: 'Stripe' },
         { text: 'Twitch' },
       ],
-      id: 'mischief',
+      id: 'mischief-gg',
     },
     {
       title: 'Hail Bounce',
@@ -83,7 +99,7 @@ const Projects = () => {
         { text: 'netlify' },
         { text: 'JavaScript' },
       ],
-      id: 'personal-website',
+      id: 'will-it-compost',
     },
     {
       title: 'Personal Website (Vue)',
@@ -99,7 +115,7 @@ const Projects = () => {
         { text: 'markdown' },
         { text: 'JavaScript' },
       ],
-      id: 'personal-website',
+      id: 'personal-website-vue',
     },
     {
       title: 'Twitch Clip Concatenator',
