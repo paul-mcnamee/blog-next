@@ -20,7 +20,7 @@ const About = () => {
               alt='Profile'
             />
           </div>
-          <div className='max-w-lg'>
+          <div className='max-w-lg pr-5'>
             <p className='mt-2 indent-4'>
               I create websites for small businesses and entrepreneurs to
               establish an online presence and flourish in the digital age. I
