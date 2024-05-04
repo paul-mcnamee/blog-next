@@ -12,9 +12,10 @@ export default function ProjectsPage() {
         <header>
           <h1 className='mt-4 text-center'>Projects</h1>
           <p className='mt-3 flex place-content-center'>
-            Over the years I have had many projects that don't get to see the
-            light of day. These are some of the projects that are finished or
-            fairly close to being finished.
+            Here are some of the open source projects that I developed over the
+            years. Not all of them are complete, but I have learned a lot from
+            working on them so they are worth sharing so perhaps others can
+            learn from them or enjoy using them.
           </p>
         </header>
         <Projects />

@@ -1,9 +1,0 @@
-initial template used:
-    https://github.com/theodorusclarence/ts-nextjs-tailwind-starter
-    https://theodorusclarence.com/blog/one-stop-starter
-
-next steps:
-    add skills section
-    add missing projects
-    add additional blog posts for each project
-    verify links for the projects
