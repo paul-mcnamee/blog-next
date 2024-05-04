@@ -28,15 +28,48 @@ const Projects = () => {
         'Life Calendar App allows you to keep track of your daily tasks, and organize your thoughts each day with a simple interface.',
       image: '/images/logos/lifecalendar.webp',
       link: '/posts/life-calendar',
-      chips: [{ text: 'Flutter' }, { text: 'Firebase' }, { text: 'Android' }],
+      chips: [
+        { text: 'Flutter' },
+        { text: 'Dart' },
+        { text: 'Firebase' },
+        { text: 'Android' },
+      ],
       id: 'life-calendar',
+    },
+    {
+      title: 'YouTube QR Code Overlay',
+      description:
+        'A friend of mine makes youtube videos for a living and requested that I make an extension so if his videos ever get "reacted" to then the person reacting would be able to display a QR code of the current video URL to provide instantaneous attribution.',
+      image: '/images/logos/ytattributions.png',
+      link: '/posts/youtube-attributions',
+      chips: [
+        { text: 'Chrome' },
+        { text: 'Extension' },
+        { text: 'JavaScript' },
+      ],
+      id: 'youtube-attributions',
+    },
+    {
+      title: 'Tileable Images to PDF tool',
+      description:
+        'I created a command line tool for windows to create a PDF document from a given directory of images. One of the more interesting features is taking an image and tiling it to fill an entire page.',
+      image: '/images/logos/csharp.png',
+      link: '/posts/tileable-images-to-pdf',
+      chips: [
+        { text: 'C#' },
+        { text: '.NET' },
+        { text: 'PowerShell' },
+        { text: 'Windows' },
+        { text: 'Stable Diffusion' },
+      ],
+      id: 'tileable-images-to-pdf',
     },
     {
       title: 'Flop Hop',
       description:
         'I made this in a day as a challenge to see how much I could get done with unity in one day. This arcade game features a space bunny dodging asteroids and collecting stars. Fly by asteroids and capture as many stars as possible to help the space bunny astronaut return home in time for dinner!',
       image: '/images/logos/flophop.webp',
-      link: 'https://play.google.com/store/apps/details?id=com.FourthMouse.FlopHop',
+      link: '/posts/unity-game-flop-hop',
       chips: [
         { text: 'C#' },
         { text: 'Unity' },

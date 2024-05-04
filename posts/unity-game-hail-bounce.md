@@ -1,7 +1,6 @@
 # Building a Game With Unity
 
-Download the game on android:
-[![Image](/images/posts/PlayStore.png)](https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce)
+![hail bounce banner](/images/posts/hailbounce/banner.png)
 
 - [Building a Game With Unity](#building-a-game-with-unity)
   - [Intro](#intro)
@@ -27,7 +26,7 @@ Download the game on android:
 
 ## Intro
 
-I wanted to build a game for a while, when I found that unity supported cross platform builds I was intrigued enough to explore it and create a small game. Little did I know I would be running into all kinds of things not really relating to development, but more just configuration. The result of this coding adventure is [Hail Bounce](https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce), feel free to download it and let me know what you think.
+I wanted to build a game for a while, when I found that unity supported cross platform builds I was intrigued enough to explore it and create a small game. Little did I know I would be running into all kinds of things not really relating to development, but more just configuration. The result of this coding adventure is Hail Bounce. The app has been removed from the play store because I did not feel it was worth keeping up with the fairly unforseen frequently required updates via the play store as a result of unity's horrible app policies. Perhaps in the future I will decide I don't completely despise unity and may build the game for the web, but for now you can download the [apk](https://drive.google.com/file/d/1XkPuUxVX1Y9Mh4KutzGXg8z1-DeA7rmt/view?usp=drive_link) and install it for yourself if you own an android device.
 
 Hopefully this post will explain all of the steps to build a game with unity and launch it on the android play store. I will be looking into an iOS release in the future but I do not have a developer profile setup with them so publishing there would be a bit more lengthy unfortunately. I also did not have an account for developing android apps but the process to apply there is basically just paying \$25 as I will explain later.
 
